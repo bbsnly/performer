@@ -1,0 +1,40 @@
+{
+    "name": "bbsnly/performer",
+    "type": "package",
+    "description": "Understand how your code performed.",
+    "keywords": [
+        "testing",
+        "performance",
+        "php"
+    ],
+    "homepage": "https://github.com/bbsnly/performer",
+    "version": "0.1.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Anatoliy Babushka",
+            "email": "anatoliybabushka@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bbsnly\\Performer\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": [
+            "vendor/bin/phpunit"
+        ]
+    }
+}
